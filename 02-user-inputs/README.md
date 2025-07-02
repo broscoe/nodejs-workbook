@@ -1,5 +1,5 @@
 
-# Activity 3: Dog Age Calculator
+# Dog Age Calculator
 
 ## Introduction
 
