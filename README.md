@@ -12,10 +12,15 @@ Follow these steps to set up the project on your local computer.
 ### 1. Fork this repository into your Github account
 
 Click the **Fork** button (top right of this page) to create a copy of this repo under your own GitHub account.
+![Fork Button on this Github repo](https://github.com/user-attachments/assets/91aefc0e-e416-4392-9b8b-31fffafdff0e)
+
 
 ### 2. Clone your fork into your computer
 
 1. Copy the link to your forked repo by clicking on the green Code button on this page
+    ![image](https://github.com/user-attachments/assets/01f8f297-b1e3-47b9-8947-9c806e0b6db7)
+
+
 2. Open your Terminal
 3. `cd` into your `Documents` folder in your computer
 4. `cd` into your `dev` folder
