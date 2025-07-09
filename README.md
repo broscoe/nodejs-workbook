@@ -78,4 +78,29 @@ Click the **Fork** button (top right of this page) to create a copy of this repo
     upstream  https://github.com/ORIGINAL-OWNER/ORIGINAL-REPOSITORY.git (fetch)
     upstream  https://github.com/ORIGINAL-OWNER/ORIGINAL-REPOSITORY.git (push)
     ```
+---
+### 5. Pulling Code from the Upstream (AnnieCannons) Repo
+
+1. **Add and commit your local changes**
+
+    Before pulling new code, make sure to save any work you've done locally, so you don’t accidentally lose changes.
+    ```
+    git add .
+    git commit -m "commit message goes here"
+    ```
+    
+2. **Pull the latest code from upstream**
+
+    Next, pull the latest code from the upstream remote repo (the AnnieCannons repo) into your own repo:
+    ```
+    git pull --no-edit upstream main
+    ```
+    The `--no-edit` flag allows you to use the default merge commit message (which saves you an extra step!)
+   
+3. **Push your local changes**
+
+    Once your local repo is updated with new changes, push them to your own GitHub fork (your copy of the repo):
+   ```
+    git push origin main
+   ```
 
