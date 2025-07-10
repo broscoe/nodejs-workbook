@@ -1,8 +1,8 @@
-# Recipe Express Server
+# Recipe API Server with Express.js
 
 ### Introduction
 
-In this project, you'll build a basic API server using Express.
+In this project, you'll build a basic API server using Express.js.
 
 The server will handle HTTP `GET` requests that let us:
 
