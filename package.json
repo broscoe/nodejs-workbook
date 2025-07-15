@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-workbook",
+  "version": "1.0.0",
+  "description": "Welcome! This repo contains exercises to help you learn **Node.js** by writing and running JavaScript in your terminal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
