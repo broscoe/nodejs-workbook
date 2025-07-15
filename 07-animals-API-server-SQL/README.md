@@ -17,17 +17,19 @@ The instructor will provide:
 
 As the backend developer, your task is to build the Express API server that handles HTTP `GET` and `POST` requests to the following endpoints:
 
-1. `/get-all-animals`
-2. `/get-one-animal/:name`
-3. `/delete-one-animal/:name`
-4. `/add-one-animal`
-5. `/update-one-animal`
+1. GET `/get-all-animals`
+2. GET `/get-one-animal/:name`
+3. GET `/delete-one-animal/:name`
+4. POST `/add-one-animal`
+5. POST `/update-one-animal`
 
 **Stretch Goals (optional):**
 
-- 🏆 Add error handling
+- 🏆 Add error handling to each endpoint
 - 🏆 Add an endpoint for filtering animals (e.g., by category or habitat)
 - 🏆 Add a `/search-animals/:term` endpoint that retrieves all animals whose names contain the search term
+- 🏆 Add a `/get-animals-by-category/:category` endpoint that retrieves all animals that belong to a specific category (e.g., mammal or bird).
+- 🏆 Add a `/get-animals-by-habitat/:habitat` endpoint that retrieves all animals that live in a particular habitat (land, water, or air).
 
 ---
 
