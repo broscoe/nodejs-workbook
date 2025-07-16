@@ -48,13 +48,17 @@ async function getAllRecipes() {
   // 3. the callback function that you run once you've read the data
 
   //this syntax uses call back function
+
+  // stores the data from data.json into recipeData variable
   const recipeData = await fs.readFile("../data.json", "utf8", (err, data) => {
     return data;
   });
+  //parses and returns the recipeData variable from the function
   return JSON.parse(recipeData);
 
 }
 
+//this function takes in 
 async function getOneRecipe(recipeIndex) {
     const recipeData = await getAllRecipes();
     const recipe = recipeData[recipeIndex]
@@ -96,7 +100,7 @@ console.log(fs.readFile("../data.json", "utf8"))
 // app.get("/get-all-recipes", async (req, res) => {
 //   const recipes = await getAllRecipes();
 
-
+// Did not get this far in class, so not required
 // TODO: API Endpoint for handling GET requests to /delete-one-recipe/:index
 
 // TODO: API Endpoint for handling GET requests to /update-one-recipe-name/:index/:newName

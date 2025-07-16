@@ -47,7 +47,11 @@ async function getOneAnimal(animalName) {
 }
 
 // Helper function for /delete-one-animal/:name
-
+async function deleteOneAnimal(animalName) {
+  await db.query("delete from animals WHERE name = $1", [
+    animalName,
+  ]);
+}
 // Helper function for /add-one-animal
 
 // Helper function for /update-one-animal
@@ -71,6 +75,11 @@ app.get("/get-one-animal/:name", async (req, res) => {
 });
 
 // GET /delete-one-animal/:name
+app.get("/delete-one-animal/:name", async (req, res) => {
+  const animalName = req.params.name;
+  await deleteOneAnimal(animalName);
+});
+// we got the user's info
 
 // POST /add-one-animal
 
