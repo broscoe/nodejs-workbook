@@ -95,11 +95,6 @@ app.get("/get-one-recipe/:index", async (req, res) => {
 
 console.log(fs.readFile("../data.json", "utf8"))
 
-
-//handle GET requests for getting all the books from data.json
-// app.get("/get-all-recipes", async (req, res) => {
-//   const recipes = await getAllRecipes();
-
 // Did not get this far in class, so not required
 // TODO: API Endpoint for handling GET requests to /delete-one-recipe/:index
 
