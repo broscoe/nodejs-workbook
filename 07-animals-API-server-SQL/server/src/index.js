@@ -67,12 +67,13 @@ async function addOneAnimal(animal) {
 // Helper function for /update-one-animal
 
 
-async function updateOneAnimal(animal) {
+async function updateOneAnimal(updatedAnimal) {
   await db.query(
-    "update animals set name = $1, category = $2, can_fly = $3, lives_in = $4 where name = 'animal'",
+    "update animals set name = $1, category = $2, can_fly = $3, lives_in = $4 where name = $1",
     [animal.name, animal.category, animal.can_fly, animal.lives_in]
-  );
+  );// sends a request to the database that updates an animal in the animal tables. Updates: name, category, can fly boolean, and lives in keys
 }
+
 // ---------------------------------
 // API Endpoints
 // ---------------------------------
@@ -110,8 +111,12 @@ app.post("/add-one-animal", async (req, res) => {
 
 // POST /update-one-animal
 
+//sends post request to the API endpoint for update one animal
 app.post("/update-one-animal", async (req, res) => {
+  //stores the body of the request in to the variable updatedAnimal
   const updatedAnimal = req.body;
+  //runs the helper function and passes the updated animal variable into the function
   updateOneAnimal(updatedAnimal);
+  // sends a text response to confirm that the animal was updated in the database
   res.send("The animal was successfully updated!");
 });
